@@ -1,0 +1,174 @@
+body,html,h4{
+    margin: 0;padding:0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}   
+button{outline: none;}
+a:visited{text-decoration: #191919}
+a:link{text-decoration: #191919}
+.head_top{
+    width: 100%;
+    height:32px; 
+    background-color: #dedede;
+}
+.head_top_main{
+    width: 1225px;
+    height: 32px;
+    background-color: #dedede;
+    margin: 0 auto;
+}
+.head_top_main ul{
+    float: right;
+    margin: 0;
+}
+.head_top_main li{
+    margin-left: 20px;
+    float: left;
+}
+.head_top_main a{
+    line-height: 32px;
+}
+.head_top_main button{
+    border: 0;
+    margin-top:4px;
+}
+
+
+.head_banner{
+    height: 127px;
+    background-color: #006229
+}
+.head_banner_main{
+    height: 127px;
+    width: 1225px;
+    margin: 0 auto;
+}
+.head_banner_main ul, .head_banner_main li{
+    margin:0;padding: 0;
+}
+.head_banner_main li{
+    line-height: 127px;
+    float: left;
+}
+.head_banner_main li:nth-child(2){
+    margin-left: 28px;
+}
+.head_banner_main li:nth-child(3){
+    margin-right:-28px;
+}
+.head_banner_main img{
+    vertical-align: middle;
+}
+
+
+.head_nav{
+    height: 50px;
+    background-color: #ffffff;
+
+    
+}
+.head_nav_main{
+    width: 1225px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+.head_nav ul{
+    padding: 0;margin: 2px;
+    display: flex;
+    justify-content: space-between
+}
+.head_nav_main li{
+
+float: left;
+
+}
+.head_nav_main a{
+    line-height: 50px;
+    color: #242424;  
+}
+
+
+.banner_img,.banner img{
+    width: 1362px;
+    height: 445px;
+    overflow: hidden;
+}
+.banner_img{
+    margin: 0 auto;
+}
+
+.content h4{
+    color: #006229;
+    float: left;
+}
+.more_news{
+    float: right;
+}
+.content_main_news a{
+    line-height: 20px;
+
+}
+.content_main_news{
+    width: 1225px;
+    height: 406px;
+}
+.content_main{
+    width: 1225px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+.content_main_news_title{
+    height: 36px;
+    border-bottom: 1px solid;
+}
+.content_main_news_cot{
+    height: 330px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+content_main_news_cot_on{
+    width: 282px;
+}
+.content_main p{
+    text-align: center;
+}
+.content_main button{
+    width: 263px;
+    height: 67px;
+    font-size: 20px;
+    line-height: 67px;
+}
+.content_main button>img{
+    vertical-align: middle;
+}
+
+
+/* 学院新闻，学院公告 */
+.content_main_newsNotice{
+    width: 1225px;
+    height: 347px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between
+}
+.content_main_newsNotice_xw,.content_main_newsNotice_gg{
+    width: 580px;
+    height: 347px;
+}
+.content_main_gg_title,.content_main_xw_title{
+    border-bottom: 1px solid;
+    height: 36px;
+}
+.content_main_newsNotice table{
+    height: 275px;
+    width: 580px;
+}
