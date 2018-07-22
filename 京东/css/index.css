@@ -1,0 +1,255 @@
+.jd{
+    height: 480px;
+    position: relative;
+}
+.jd-inner{
+    height: 480px;
+    position: relative;
+    z-index: 1;
+}
+.ad{
+    height: 480px;
+    width: 100%;  /*  一定要写宽度，position自动将元素转化为行内块，要手动给宽*/
+    background: url(../images/bg.png) no-repeat top center;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.ad a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.jd-left{
+    width: 190px;
+    height: 465px;
+    background-color: #6e6568;
+    float: left;
+    padding-top: 15px;
+}
+.jd-left li{
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+}
+.jd-left li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.jd-left li a:hover{
+    color: #f10;
+}
+.jd-left span{
+    color: #fff;
+    font-size: 12px;
+}
+.jd-left li:hover{
+    background-color: #999395;
+}
+/* 轮播图 */
+.jd-mid{
+    width: 790px;
+    height: 480px;
+    float: left;
+    margin: 0 10px;
+}
+.jd-mid-one{
+    height: 340px;
+    background-color: #f25368;
+    margin-bottom: 10px;
+}
+.jd-mid-one .array{
+    height: 340px;
+    position: relative;
+}
+.arr-l,.arr-r{
+    display: block;
+    height: 60px;
+    width: 25px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    font-family: "icomoon";
+    font-size: 30px;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+}
+.arr-l{
+    left: 0;
+    padding-left:5px;
+}
+.array .arr-r{
+    right: 0;
+    padding-right: 5px;
+}
+/* 2张图的广告 */
+.jd-mid-two div{
+    width: 390px;
+    height: 130px;
+    float: left;
+}
+.jd-mid-two div:nth-child(1){
+    margin-right: 10px;
+}
+.jd-mid-two div img{
+    width: 100%;
+}
+/* 导航点 */
+.array ol{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+.array ol li{
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    float: left;
+    margin: 4px 5px;
+    cursor: pointer;
+}
+.array ol li:hover{
+    background-color: #f10215;
+}
+
+/* main的右侧 */
+.jd-right{
+    width: 190px;
+    height: 480px;
+    float: left;
+}
+.user{
+    height: 95px;
+    padding: 20px 15px 0;
+
+}
+.user-info{
+    height: 40px;
+    padding-left: 54px;
+    font-size: 12px;
+    color: #747474;
+    line-height: 22px;
+    position: relative;
+}
+.user-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.user-info a{
+    font-size: 12px;
+    color: #747474;
+}
+.user-info a:hover{
+    color: #f10215;
+}
+.user-profit{
+    margin-top: 14px;
+}
+.user-profit a{
+    display:inline-block;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    color: #747474;
+    font-size: 12px;
+    line-height: 20px;
+    border: 2px solid #f10215;
+
+}
+.user-profit a:hover{
+    background-color: #f10215;
+}
+.news{
+    height: 149px;
+    border-top: 1px solid #ccc;
+    padding: 5px 15px 0;
+}
+.news-hd{
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0;
+    position: relative;
+}
+.news-hd .cuxiao{
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+.news-hd .more1{
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+}
+.news-hd a{
+    font-size: 12px;
+    color: #747474;
+}
+.news-hd .line{
+    width: 24px;height: 2px;
+    background-color: #f10215;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+.news-bd{
+    margin-top: 10px;
+}
+.news-bd li{
+    line-height: 23px;
+    height: 23px;
+}
+.news-bd a{
+    font-size: 12px; 
+    color: #747474;
+}
+.news-bd a:hover{
+    color: #f10215;
+}
+.serv{
+    height: 210px;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+}
+.serv a{
+    font-size: 12px;
+    color: #747474;
+}
+.serv ul{
+    width: 198px;
+}
+.serv li{
+    width: 47px;
+    height: 69px;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.serv li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.serv li i{
+    display: block;
+    margin:15px auto 8px;
+    width: 24px;
+    height: 24px;
+    background: url(../images/sprite_fs@1x.png) no-repeat 0px -44px;
+}
+.serv p{
+    text-align: center;
+}
