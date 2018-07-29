@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百度的搜索框</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #96285b;
+    }
+    #box{
+        margin: 100px auto 0;
+        width: 400px;
+        height: 40px;
+        background-color: #ccc;
+    }
+    #txt{
+        width: 300px;
+        height: 40px;
+        float: left;
+        outline: none;
+        text-indent: 10px;
+    }
+    #btn{
+        width: 99px;
+        height: 40px;
+        color: chartreuse;
+        float: left;
+        border: 1px solid #f05268;
+        background-color: #f05268;
+    }
+</style>
+<body>
+    <div id="box">
+        <input type="text" id="txt" value="">
+        <input type="button" value="SOUSUO" id="btn">
+    </div>
+
+
+    <script src="common.js"></script>
+    <script>
+        var keywords=["德玛西亚万岁","德邦总管菊花信","为什么他这么厉害？","为什么中国的长城很出名？","腾讯视萍","小李子真的很帅","苹果此次召回还是没有中国","为什么大海是蓝的","为什么天空是蓝的","为什么你这么帅"]
+        //获取文本框键盘抬起事件
+        byId("txt").onkeyup=function(){
+            //每次键盘抬起都判断页面中有没有这个div
+            if(byId("dv")){
+                byId("box").removeChild(byId("dv"))
+            }
+
+            //获取文本框输入的内容
+            var text=this.value;
+            var tempArr=[];//
+            //把输入的内容与数组的内容对比
+            for(var i=0;i<keywords.length;i++){
+                if(keywords[i].indexOf(text)==0){
+                    tempArr.push(keywords[i]);//追加
+                }
+            }
+            //坑-----
+            //如果文本框是空的，临时数组是空的，不用创建div
+            if(this.value.length==0||tempArr.length==0){
+                //如果页面中有这个div ,则删除这个div
+                if(byId("dv")){
+                    byId("box").removeChild(byId("dv"));
+                }
+                return;
+            }
+            //遍历临时数组创建div,把div 加入到ID为 box的
+            var newDiv=document.createElement("div");
+            byId("box").appendChild(newDiv)
+            newDiv.id="dv"
+            newDiv.style.width="300px";
+            // newDiv.style.height="200px";
+            newDiv.style.border="1px solid #f05268";
+            //循环遍历临时数组，创建对应的p标签
+            for(var i=0;i<tempArr.length;i++){
+                var newP=document.createElement("p");
+                //把P加入新div中
+                newDiv.appendChild(newP);
+                setInnerText(newP,tempArr[i]);
+                newP.style.cursor="pointer";
+                newP.style.marginTop="10px";
+                newP.style.paddingLeft="5px";
+                newP.style.color="#fff"
+                newP.onmouseover=mouseoverBgc;
+                newP.onmouseout=mouseoutBgc;
+            }
+        }
+        function mouseoverBgc(){
+            this.style.backgroundColor="#f05268";
+        }
+        function mouseoutBgc(){
+            this.style.backgroundColor="";
+        }
+    </script>
+</body>
+</html>
